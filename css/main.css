@@ -1,0 +1,26 @@
+#view {
+    display: table-cell;
+    width: 1024px;
+}
+
+#controls {
+    display: table-cell;
+    vertical-align: top;
+    padding-left: 10px;
+}
+
+#controls label {
+    display: block;
+    overflow: hidden;
+    margin: 5px;
+    width: 350px;
+}
+
+#controls label input {
+    float: right;
+    width: 150px;
+}
+
+#controls button {
+    width: 150px;
+}
