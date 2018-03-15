@@ -8,26 +8,26 @@ class Application {
      */
     constructor() {
         // Ширина контейнера анимации
-        this.WIDTH = 1024;
+        this.WIDTH = 800;
 
         // Высока контейнера анимации
-        this.HEIGHT = 512;
+        this.HEIGHT = 600;
 
         // Рамка вокруг контейнера
-        this.PADDING = 32;
+        this.PADDING = 25;
 
         // Ускорение свободного падения
         this.GRAVITY = 9.81;
 
         // Константа масштаба: количество пикселей экрана на 1 метр
-        this.SCALE = 64;
+        this.SCALE = 100;
 
         // настройки по умолчанию
         this.DEFAULTS = {
             speed: 10,
             y0: 0,
             x0: 0,
-            angle: 45,
+            angle: 65,
         };
 
         this.sprite = null;
@@ -129,8 +129,8 @@ class Application {
 
         document.getElementById('clear').addEventListener('click', () => {
             this.trajectContainer.removeChildren();
-            this.sprite.position.set(this.getXPosByX(0), this.getYPosByY(0));
             this.resetParams();
+            this.initParams();
         });
     }
 
